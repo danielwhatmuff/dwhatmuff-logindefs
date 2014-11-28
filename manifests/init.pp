@@ -1,6 +1,6 @@
 # == Class: logindefs
 #
-# Used to control the installation and configuration of Rootkit checker
+# Used to control the configuration of /etc/login.defs in Ubuntu 
 #
 # === Parameters
 #
@@ -17,7 +17,7 @@
 #
 # === Copyright
 #
-# Copyright 2014 Daniel Whatmuff, UK HomeOffice
+# Copyright 2014 Daniel Whatmuff
 #
 class logindefs (
   $config         = hiera_hash('logindefs::configuration', false),
@@ -27,7 +27,7 @@ class logindefs (
 {
 
   if !$config {
-    fail('You must define configuration in hiera where the keys are expected keys in the configuration and the values the config values')
+    fail('You must define a configuration hash in hiera with key values to be used within /etc/login.defs')
   }
 
   validate_hash($config)
