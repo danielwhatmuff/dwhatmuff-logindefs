@@ -11,6 +11,19 @@
 #  class { logindefs:
 #  }
 #
+# === Hiera
+#
+# This module expects a hiera hash, defined in the format shown below with the key/values to be used in /etc/login.defs
+#
+# logindefs::configuration:
+#   MAIL_DIR: '/var/mail'
+#   FAILLOG_ENAB: 'yes'
+#   LOG_UNKFAIL_ENAB: 'no'
+#   LOG_OK_LOGINS: 'no'
+#   SYSLOG_SU_ENAB: 'yes'
+#   SYSLOG_SG_ENAB: 'yes'
+#   FTMP_FILE: '/var/log/btmp'
+#
 # === Authors
 #
 #  Daniel Whatmuff <danielwhatmuff@gmail.com>
