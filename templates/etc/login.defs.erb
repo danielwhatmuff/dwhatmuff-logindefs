@@ -5,5 +5,5 @@
 <%- if scope.lookupvar('logindefs::config')
   Hash[scope.lookupvar('logindefs::config').sort].each do |ld_key, ld_val|
     Array(ld_val).each do |val| -%>
-<%= ld_key.upcase %>=<%= val %>
+<%= ld_key.upcase %> <%= val %>
 <%- end end end -%>
