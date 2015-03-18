@@ -1,6 +1,6 @@
 # == Class: logindefs
 #
-# Used to control the configuration of /etc/login.defs in Ubuntu 
+# Used to control the configuration of /etc/login.defs
 #
 # === Parameters
 #
