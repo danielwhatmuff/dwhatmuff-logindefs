@@ -1,11 +1,10 @@
 name    'dwhatmuff-logindefs'
 version '0.1.0'
-source 'UNKNOWN'
+source 'github.com/danielwhatmuff/dwhatmuff-logindefs'
 author 'dwhatmuff'
 license 'Apache License, Version 2.0'
-summary 'UNKNOWN'
-description 'UNKNOWN'
-project_page 'UNKNOWN'
+summary 'dwhatmuff-logindefs'
+description 'Module to manage the login.defs configuration'
+project_page 'github.com/danielwhatmuff/dwhatmuff-logindefs'
 
-## Add dependencies, if any:
-# dependency 'username/name', '>= 1.2.0'
+dependency 'puppetlabs/stdlib', '>= 4.6.0'
